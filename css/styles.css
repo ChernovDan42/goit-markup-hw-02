@@ -1,0 +1,120 @@
+:root{
+    --primery-text-color: #434455;
+    --title-text-color: #2E2F42;
+    --accent-color: #4D5AE5;
+    --primery-btn-text-color: #FFFFFF;
+    --primery-btn-hover-bgc: #404BBF;
+    --primery-footer-logo-color: #F4F4FD
+}
+
+
+.page {
+    font-family: Roboto;
+    color: var(--primery-text-color);
+    background-color: #ffffff;
+}
+
+/* Header */
+/* logo */
+.logo {
+    color: var(--title-text-color);
+}
+
+.web {
+    color: #4D5AE5;
+}
+
+.list {
+    list-style: none;
+}
+
+/* site nav,address */
+.site-nav .link {
+    color: var(--title-text-color);
+}
+.site-nav .link:hover, 
+.site-nav .link:focus{
+    color: #4D5AE5; 
+}
+
+.site-nav .link:active{
+    color: #404BBF;
+}
+
+.address .link{
+    color: var(--primery-text-color);
+}
+
+.address .link:hover,
+.address .link:focus{
+    color: #4D5AE5;
+}
+
+.address .link:active{
+    color: #404BBF;
+}
+
+/* Main */
+/* стиль заголовків */
+.hero-title {
+    color: #FFFFFF;
+}
+
+.section-title{
+    color: var(--title-text-color);
+}
+
+.hero {
+    background-color: var(--title-text-color);
+}
+
+/* Features */
+.feature-title{
+    color: var(--title-text-color)
+}
+
+.section .feature{
+list-style: none
+}
+
+/* Buttons */
+.button {
+    color: var(--primery-btn-text-color);
+    background-color: var(--accent-color);
+                       
+}
+
+.button.primery{
+    color: var(--primery-btn-text-color);
+    background-color: var(--accent-color);
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--primery-btn-hover-bgc);
+}
+
+
+
+
+
+
+
+
+/* Footer */
+.footer {
+background-color: var(--title-text-color);
+}
+
+.footer-logo {
+    color: var(--primery-footer-logo-color);
+}
+
+
+.footer .footer-text {
+    color: #E7E9FC;
+}
+
+/* білий текс #FFFFFF */
+/* фон для секцій   #E5E5E5 */
+/* основний фон  #F4F4FD */
