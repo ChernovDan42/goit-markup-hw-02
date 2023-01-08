@@ -1,130 +1,117 @@
 :root {
-  --primery-text-color: #434455;
-  --title-text-color: #2e2f42;
-  --main-title-color: #ffffff;
-  --accent-color: #4d5ae5;
-  --primery-btn-text-color: #ffffff;
-  --primery-hover-bgc: #404bbf;
-  --secondary-btn-bgc: #f4f4fd;
-  --secondary-btn-text-color: #4d5ae5;
-  --active-page: #404bbf;
-  --primery-footer-logo-color: #f4f4fd;
-  --footer-text: #e7e9fc;
+  /* Back ground colors */
   --page-bgc: #ffffff;
+  --hero-bgc: #2E2F42;
+  --footer-bgc: #2E2F42;
+  --secondary-section-bgc: #F4F4FD;
+
+  --hero-text-color: #ffffff;
+  --primery-text-color: #434455;
+  --primery-title-color: #2E2F42;
+  --logo-text-color: #2E2F42;
+  --accent-logo-text-color: #4D5AE5;
+  --primery-brand-color: #4D5AE5;
+  --nav-hover-color: #404BBF;
+  --primery-btn-text-color: #FFFFFF;
+  --primery-btn-bgc: #4D5AE5;
+  --primery-btn-hover: #404BBF;
+  --link-color: #2E2F42;
+  --address-link-color: #434455;
+  /* secondary btn */
+  --secondary-btn-text-color: #4D5AE5;
+  --secondary-btn-bgc: #F4F4FD;
+  --secondary-btn-text-hover-color: #FFFFFF;
+  --secondary-btn-bgc-hover: #404BBF;
+  /* footer */
+  --secondary-logo-text-color: #F4F4FD;
+  --footer-text-color: #E7E9FC;
 }
 
-/* <BODY> через клас .page */
 body {
   color: var(--primery-text-color);
-  background-color: var(--page-bgc);
 
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-
   letter-spacing: 0.02em;
 }
 
 /* Header */
-/* logo */
+/* Logo */
 .logo {
-  color: var(--title-text-color);
-  font-family: "Raleway", sans-serif;
-  letter-spacing: 0.03em;
+  color: var(--logo-text-color);
+
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.3;
+  line-height: 1.33;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+
 }
 
 .web {
-  color: var(--accent-color);
+  color: var(--accent-logo-text-color);
 }
 
-/* Ul style */
-.list {
-  list-style: none;
-}
-
-/* site nav,address */
-.site-nav .link {
-  color: var(--title-text-color);
+/* Navigation */
+.link {
   text-decoration: none;
+}
 
-  font-family: "Roboto", sans-serif;
+.nav .link {
+  color: var(--link-color);
+
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em
 }
 
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--primery-hover-bgc);
+.nav .link:hover,
+.nav .link:focus {
+  color: var(--nav-hover-color);
 }
 
-
-.site-nav .link:active {
-  color: var(--active-page);
+.nav .link.active {
+  color: var(--primery-brand-color);
 }
 
-.site-nav .link.active {
-  color: var(--primery-hover-bgc);
+.nav .link.active:hover {
+  color: var(--nav-hover-color);
 }
 
-.address .link {
-  color: var(--primery-text-color);
-
+.link.address {
   font-style: normal;
-  font-size: 16px;
-  line-height: 1.5;
-  text-decoration: none;
+  color: var(--address-link-color)
 }
 
-.address .link:hover,
-.address .link:focus {
-  color: var(--primery-hover-bgc);
+.link.address:hover,
+.link.address:focus {
+  color: var(--nav-hover-color)
 }
 
-/* Main */
-/* стиль заголовків */
+
+/* Hero */
+.hero {
+  background-color: var(--hero-bgc)
+}
+
 .hero-title {
-  
-color: var(--main-title-color);
-
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
- }
-
-.section-title {
-  color: var(--title-text-color);
+  color: var(--hero-text-color);
+  font-family: 'Roboto', sans-serif;
 
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1;
+  font-size: 56px;
+  line-height: 1.1;
 
   text-align: center;
-  text-transform: capitalize;
- }
-
-.hero {
-  background-color: var(--title-text-color);
-}
-
-/* Features */
-.title {
-  color: var(--title-text-color);
-
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
- }
-
-.section .feature {
-  list-style: none;
+  letter-spacing: 0.02em;
 }
 
 /* Buttons */
@@ -132,67 +119,90 @@ color: var(--main-title-color);
   cursor: pointer;
 
   color: var(--primery-btn-text-color);
-  background-color: var(--accent-color);
+  background-color: var(--primery-btn-bgc);
 
-  font-family: "Roboto";
-
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  align-items: center;
   letter-spacing: 0.04em;
 }
 
-.button.primery {
-  color: var(--primery-btn-text-color);
-  background-color: var(--accent-color);
+.button:hover,
+.button:focus {
+  background-color: var(--primery-btn-hover);
 }
 
-.button.secondary {
+.secondary.button {
   color: var(--secondary-btn-text-color);
   background-color: var(--secondary-btn-bgc);
 }
-.button:hover,
-.button:focus {
-  background-color: var(--primery-hover-bgc);
+
+.secondary.button:hover,
+.secondary.button:focus {
+  color: var(--secondary-btn-text-hover-color);
+  background-color: var(--secondary-btn-bgc-hover);
 }
 
-.button.secondary:hover,
-.button.secondary:focus {
-  color: var(--primery-btn-text-color);
-  background-color: var(--primery-hover-bgc);
+
+
+/* Features;Section */
+.section-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
-/* Our Team */
-.team {
-  background-color: var(--secondary-btn-bgc);
+.title {
+  color: var(--primery-title-color);
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 /* Footer */
+
 .footer {
-  background-color: var(--title-text-color);
+  background-color: var(--footer-bgc)
 }
 
 .footer-logo {
-  color: var(--primery-footer-logo-color);
+  color: var(--secondary-logo-text-color);
 
-  font-family: "Raleway", sans-serif;
-  letter-spacing: 0.03em;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.3;
+  line-height: 1.33;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
 }
 
-.footer .footer-text {
-  color: var(--footer-text);
+.footer-text {
+  color: var(--footer-text-color)
+}
+
+/* List style */
+
+.list {
+  list-style: none;
 }
 
 /* Portfolio */
 
-.portfolio-item {
-  color: var(--primery-text-color);
-
+.portfolio-link {
   text-decoration: none;
+  
+  color: var(--primery-text-color);
 }
